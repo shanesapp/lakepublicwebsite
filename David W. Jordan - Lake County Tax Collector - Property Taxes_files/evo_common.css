@@ -1,0 +1,5639 @@
+@import url('https://fonts.googleapis.com/css?family=Marcellus');
+
+@font-face {
+    font-family: aleo;
+    src: url("https://cdn.evo.cloud/fonts/aleo/Aleo-Regular.otf") format("opentype");
+}
+
+@media print {
+    #slideshow {
+        display: none;
+    }
+
+    #evo_interior_content {
+        width: 100%;
+    }
+
+    #evo_page_side_menu {
+        display: none;
+    }
+
+    #evo_page_side_menu_wrapper {
+        display: none;
+    }
+
+    #welcomeStatement {
+        margin-top: 50px;
+    }
+
+    body {
+        height: auto;
+        overflow-y: visible;
+    }
+
+    #evo_background_slideshow {
+        display: none;
+    }
+
+}
+
+.evo_sr_only {
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+    padding: 0px !important;
+    border: 0px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+}
+
+#evo_event_dialog_details_button {
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.evo_form_error {
+    color: #ff0000;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.evo_form_required_asterisk {
+    color: rgba(222, 40, 20, 1.0);
+    display: inline-block;
+    padding-right: 3px;
+    transform: translateY(3px);
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active {
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.evo_form_message {
+    font-size: 14px;
+    color: red;
+}
+
+.evo_icalendar_link {
+    float: right;
+    margin-top: 5px;
+    margin-right: 75px;
+}
+
+#evo_enews_signup_message {
+    font-weight: bold;
+}
+
+#evo_enews_signup_already_customer {
+    margin-top: -20px;
+}
+
+/* BEGIN: Meetings page/widget rules */
+#evo_meetings_monthview {
+    margin-top: -50px;
+}
+
+#evo_calendar_row_controls {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.evo_calendar_box_content {
+    min-height: 150px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.evo_calendar_row {
+    display: flex;
+    margin-top: -1px;
+}
+
+.evo_calendar_row_first {
+    display: flex;
+    margin-top: 0px;
+}
+
+.evo_calendar_box_inner_content {
+    margin-top: 25px;
+    margin-left: 3px;
+}
+
+.evo_calendar_box_event_hr {
+    width: 50%;
+    border-top: 1px dotted #4e4e4e;
+    height: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.evo_calendar_box {
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: -1px !important;
+}
+
+.evo_calendar_box_first_in_row {
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 0px !important;
+}
+
+.evo_calendar_event_div {
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.evo_calendar_event_div_additional {
+    display: none;
+}
+
+#evo_meetings_form #evo_meetings_begin_date,
+#evo_meetings_form #evo_meetings_end_date{
+    width: 10rem;
+    display: inline-block;
+    /*height: 28px;*/
+    /*margin-left: 25px;*/
+    /*height: 1.1em;*/
+    font-size: 1em;
+    background-color: white;
+    padding: 2px;
+    border: 1px solid #888888;
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    #evo_meetings_form #evo_calendar_update {
+        display: inline-block;
+        /*margin-left: 25px;*/
+    }
+}
+
+@media (max-width: 728px) {
+    #evo_meetings_form #evo_meetings_begin_date {
+        /*width: 75%;*/
+    }
+
+    #evo_meetings_form #evo_meetings_end_date {
+        /*width: 75%;*/
+        margin-left: 25px;
+    }
+
+    #evo_meetings_form #evo_meetings_search {
+        /*width: 75% !important;*/
+        /*margin-lefT: 25px;*/
+    }
+
+    /*#evo_meetings_form #evo_calendar_update {*/
+    /*    width: 75%;*/
+    /*    margin-left: 25px;*/
+    /*}*/
+}
+
+/* @remove */
+#evo_meetings_form #evo_calendar_update i {
+    width: 15px;
+    padding-left: 5px;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#evo_calendar_update {
+    font-size: inherit;
+    /*padding: 0.2em 1em;*/
+    background-color: white;
+    color: black;
+    border: 1px solid var(--interface-background-gray) !important;
+}
+
+#evo_listview_control_previous,
+#evo_calendar_control_previous {
+    padding-left: 10px;
+    /*margin-right: -5px;*/
+    border-radius: 4px 0 0 4px;
+}
+
+.evo_listview_box_today,
+.evo_calendar_box_today {
+    /*background-color: #e8fde7;*/
+}
+
+#evo_listview_control_today,
+#evo_calendar_control_today {
+    /*border-radius: 0px;*/
+    /*background-color: var(--interface-background-gray);*/
+    color: black;
+}
+
+#evo_calendar_control_next,
+#evo_listview_control_next {
+    /*margin-left: -6px;*/
+    /*border-radius: 0 5px 5px 0;*/
+    padding-right: 10px;
+}
+
+#evo_listview_control_month,
+#evo_calendar_control_month {
+    /*margin-left: 50px;*/
+    /*border-radius: 0;*/
+}
+
+#evo_listview_control_year {
+    /*margin-left: -6px;*/
+    /*border-radius: 0 5px 5px 0;*/
+}
+
+/* @remove */
+#evo_listview_month_year_label {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* @remove */
+#evo_calendar_control_showall {
+    /*margin-left: 50px;*/
+}
+
+#evo_calendar_control_icalendar_subscriptions {
+    /*margin-left: -6px;*/
+    /*border-radius: 0;*/
+}
+
+#evo_calendar_control_icalendar_subscriptions a {
+    color: #FFFFFF;
+}
+
+#evo_calendar_control_link_other_events_page {
+    /*margin-left: -6px;*/
+    /*border-radius: 0 5px 5px 0;*/
+}
+
+#evo_calendar_control_link_other_events_page a {
+    color: #FFFFFF;
+}
+
+#evo_calendar_control_submit_new {
+    cursor: pointer;
+}
+
+#evo_calendar_month_year_label {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.evo_month_select_button {
+    width: 90%;
+    margin-top: 7px;
+}
+
+.evo_year_select_button {
+    width: 90%;
+    margin-top: 7px;
+}
+
+.evo_calendar_date_box {
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    border-color: #000000;
+    border-width: 1px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.evo_calendar_box_today .evo_calendar_date_box {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.evo_calendar_day_of_week_label {
+    text-align: center;
+    background-color: #444444;
+    color: white;
+}
+
+.evo_event_dialog_details_day_of_week {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.evo_event_details_label {
+    font-weight: bold;
+}
+
+/* @remove */
+.listview_cardtable {
+    width: 90%;
+    margin-top: 5px;
+    border: 1px solid black;
+    table-layout: fixed;
+}
+
+/* @remove */
+.listview_cardtable_list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* @remove */
+.listview_cardtable_detail {
+    font-weight: bold;
+}
+
+/* @remove */
+.listview_cardtable_detail_div {
+    padding-left: 10px;
+}
+
+.evo_calendar_additional_toggle {
+    display: block;
+    height: 15px;
+    width: 30px;
+    position: absolute;
+    bottom: 3px;
+    left: 45%;
+    cursor: pointer;
+}
+
+.evo_calendar_last_event_in_box {
+    margin-bottom: 10px;
+}
+
+.evo_calendar_event_dialogue_divider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+#evo_calendar_select_all_checkboxes,
+#evo_calendar_clear_all_checkboxes {
+    background-color: white;
+    color: #3f3f3f;
+}
+
+#evo_calendar_control_next_previous_wrapper_div {
+    display: inline-block;
+    /*width: 26%;*/
+}
+
+#evo_listview_control_next_previous_wrapper_div {
+    display: inline-block;
+    background-color: var(--interface-background-gray);
+    padding: 5px 0;
+}
+
+#evo_calendar_control_month_year_wrapper_div {
+    display: inline-block;
+    /*width: 21%;*/
+}
+
+#evo_calendar_control_expand_subscribe_meetings_wrapper_div {
+    display: inline-block;
+    /*width: 43%;*/
+}
+
+
+/* CSS from http://stackoverflow.com/questions/21955088/7-equal-columns-in-bootstrap for 7 column table */
+
+@media (min-width: 768px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .evo_calendar_date_selector_icon {
+        font-size: 15px;
+        margin-left: -50px;
+        margin-bottom: 10px;
+        margin-top: 6px;
+    }
+
+    .evo_main_menu_heading_caret {
+        display: none !important;
+    }
+
+    .evo_main_menu_wrapper .evo_main_menu_heading_caret_enable_desktop {
+        display: inline-block !important;
+        margin-top: -100%;
+        transform: translate(5px, 2px);
+        width: 0px;
+        color: black !important;
+        font-size: 18px !important;
+    }
+}
+
+.evo_visible_important {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+@media (max-width: 800px) {
+    body .evo_news_posts_panels .news_post_columns_inner_wrapper {
+        grid-template-columns: 1fr !important;
+    }
+
+    body #evo_overall_content_wrapper .evo_department_news_box_panels {
+        height: 400px;
+    }
+
+    .evo_news_posts_panels {
+        height: 390px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    #news_posts_grid_carousel {
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .evo_main_menu_heading_caret {
+        position: absolute;
+        font-size: 24px !important;
+        left: 0px;
+        transform: translate(95vw, -1px);
+        display: inline-block !important;
+    }
+
+    #evo_meetings_monthview_tab {
+        display: none !important;
+    }
+
+    #evo_listview_control_next_previous_wrapper_div {
+        display: block;
+        margin: 0 auto;
+        width: 203px;
+    }
+
+    #evo_listview_control_month_year_wrapper_div {
+        display: inline-block;
+        width: auto;
+        /*margin: auto;*/
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #evo_listview_control_month {
+        margin: 0;
+        border-radius: 4px 0 0 4px;
+        background-color: var(--interface-button-blue);
+        border: 1px solid transparent;
+    }
+
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .evo_calendar_date_selector_icon {
+        font-size: 15px;
+        margin-left: -50px;
+        margin-bottom: 10px;
+        margin-top: 6px;
+    }
+}
+
+@media (min-width: 992px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.4%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #evo_calendar_control_previous_wrapper_div {
+        display: inline-block;
+        /* margin-left: 17%; width: 40%; */
+    }
+
+    #evo_calendar_control_month_year_wrapper_div {
+        /*width: 37%; */
+        display: inline-block;
+    }
+
+    #evo_calendar_control_next_previous_wrapper_div {
+        display: inline-block;
+        /* margin-left: 17%;    width: 40%; */
+    }
+
+    .evo_calendar_date_selector_icon {
+        font-size: 15px;
+        margin-left: -50px;
+        margin-top: 5px;
+    }
+}
+/* END: Meetings page/widget rules */
+
+/**
+ *  The following is not really needed in this case
+ *  Only to demonstrate the usage of @media for large screens
+ */
+
+@media (min-width: 1200px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.925%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .evo_calendar_date_selector_icon {
+        font-size: 15px;
+        margin-left: -50px;
+        margin-top: 5px;
+    }
+}
+
+
+/* Small Calendar Widget Styling */
+
+#calendarFocusSmall {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#calendarFocusSmall {
+    width: 100%;
+    background-color: #FFF;
+}
+
+#calendarFocusSmall .CalendarMonthTitle {
+    background: #3A6D9B;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#calendarFocusSmall td {
+    padding: 14px 4px;
+    font-size: 14px;
+}
+
+#calendarFocusSmall .CalendarDayTitle .CalendarSmall {
+    font-size: 14px;
+    background-color: #333333;
+    color: #c2d5d5;
+}
+
+#calendarFocusSmall .CalendarDayNorm {
+    background-color: #EEE;
+    color: #333;
+}
+
+#calendarFocusSmall .CalendarOtherMonth {
+    background-color: #FFF;
+    color: gray;
+}
+
+#calendarFocusSmall .CalendarWithEvents {
+    background-color: #00448f !important;
+    color: white !important;
+}
+
+#calendarFocusSmall .CalendarDayHL,
+#calendarFocusSmall .CalendarDayHLToday {
+    background-color: #CC0607;
+}
+
+#calendarFocusSmall .CalendarDayNorm:hover {
+    background-color: red !important;
+}
+
+#calendarFocusSmall .CalendarDayNorm.CalendarSmall.calendar_small_today {
+    background-color: #2c67ab;
+    color: #FFF;
+}
+
+
+/* Alert Styling */
+
+.alert-wrapper {
+    background: red;
+    overflow-x: hidden;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.alert-wrapper a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+
+/* End Alert Styling */
+
+
+/* Format Custom Google Search Results so that they display correctly with Bootstrap */
+
+.gsc-control-cse .gsc-table-result {
+    font-family: inherit;
+}
+
+.gsc-control-cse .gsc-input-box {
+    height: inherit;
+}
+
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button,
+input.gsc-search-button-v2 {
+    box-sizing: content-box;
+    line-height: normal;
+    margin-top: 0px;
+}
+
+
+/* End Format Custom Google Search Results so that they display correctly with Bootstrap */
+
+.evo_facility_row {
+    margin-top: 10px;
+}
+
+.evo_survey_form_row {
+    margin-top: 5px;
+}
+
+.evo_survey_form_input_choice {
+    width: 200px;
+}
+
+.evo_survey_form_input_text {
+    width: 200px;
+}
+
+.evo_survey_question_label {
+    margin-left: 5px;
+}
+
+.evo_survey_title {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.survey_question_row {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.survey_answer_row {
+    margin-left: 20px;
+}
+
+.survey_question_error {
+    color: red;
+    margin-left: 10px;
+}
+
+.evo_survey_thank_you {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.evo_survey_misc_message {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.location_category_thumbnail {
+    margin-right: 10px;
+}
+
+.evo_survey_horizontal_bar_chart rect {
+    fill: #54a2ea;
+}
+
+.evo_survey_horizontal_bar_chart .evo_bar_chart_label {
+    fill: black;
+    font: 14px sans-serif;
+    text-anchor: start;
+}
+
+.evo_bar_chart_percent {
+    font-weight: bold;
+}
+
+
+/* evo_carousel-fade CSS from:  http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide */
+
+.evo_carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.evo_carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.evo_carousel-fade .carousel-inner .active.left,
+.evo_carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    left: 0px;
+}
+
+.evo_carousel-fade .carousel-inner .next.left,
+.evo_carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.evo_carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+/* END evo_carousel-fade formatting */
+
+.evo_close_div {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    border-width: 1px;
+    border-style: solid;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#evo_map {
+    min-height: 250px;
+    height: 400px;
+}
+
+#evo_311_map {
+    height: 250px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.evo_311_request_detail_heading {
+    font-weight: bold;
+}
+
+#evo_place_map {
+    min-height: 250px;
+    height: 250px;
+}
+
+#evo_search_target {
+    height: 80px;
+    width: 300px;
+    z-index: 15;
+    padding-top: 50px;
+}
+
+#evo_search_target i {
+    font-size: 18px;
+    color: blue;
+    z-index: 15;
+}
+
+#evo_search_target .input-group {
+    height: 80px;
+    width: 300px;
+}
+
+#evo_search_target #search-input-query {
+    margin-left: 25px;
+    width: 90%;
+    border-radius: 20px;
+    z-index: 0;
+    height: 40px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #cccccc;
+    background-color: white;
+}
+
+#evo_search_target button {
+    height: 40px;
+    width: 50px;
+    margin-left: -50px;
+    z-index: 12;
+    background-color: transparent;
+    border: none;
+    margin-top: -3px;
+}
+
+.evo_display_block_important {
+    display: block !important;
+}
+
+#evo_map_left_legend {
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 100vh;
+    background-color: #222222;
+    z-index: 105;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.evo_legend_layer_current_selection {
+    background-color: white;
+}
+
+.evo_legend_layer_current_selection i {
+    color: black !important;
+}
+
+.evo_legend_layer_current_selection .legend_label_text {
+    color: black !important;
+}
+
+#evo_map_fade_in_div {
+    height: 100vh;
+    width: 100vw;
+    z-index: 25000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+}
+
+#evo_map_left_legend .evo_left_legend_layer {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 1px;
+    padding-bottom: 12px;
+    font-size: 13px;
+}
+
+.evo_left_directory_divider {
+    width: 50%;
+    border-color: grey;
+}
+
+#evo_map_left_legend .evo_left_legend_layer i {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+#evo_map_map_directory {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 501;
+    background-color: white;
+    display: none;
+    overflow-y: auto;
+}
+
+.map_directory_featured {
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.evo_map_directory_place {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.evo_map_directory_place .feature_name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.map_directory_layer_label {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.evo_map_directory_place .feature_description {
+    padding: 10px;
+}
+
+.evo_map_directory_place .feature_hours {
+    padding: 10px;
+}
+
+.evo_map_directory_place .feature_address {
+    padding: 10px;
+}
+
+.feature_image img {
+    max-width: 160px;
+    max-height: 160px;
+}
+
+#evo_map_popup {
+    width: 350px;
+    height: 250px;
+    z-index: 101;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#evo_map_popup.evo_map_popup_image_mode {
+    position: absolute;
+    height: 60vh;
+    left: 55vw !important;
+    width: 43vw;
+    top: 15vh !important;
+    border-radius: 0px;
+    overflow-y: hidden;
+}
+
+#evo_map_popup.evo_map_popup_image_mode .evo_popup_image_mode_image {
+    margin-top: 31px;
+}
+
+@media (max-width: 768px) {
+    #evo_map_popup.evo_map_popup_image_mode {
+        display: none !important;
+    }
+}
+
+.evo_map_popup_image_mode_amenity_icons {
+    width: 100%;
+    background: rgba(45, 45, 45, 0.75);
+    height: 63px;
+    left: 0px;
+    bottom: 83px;
+    position: absolute;
+    padding-left: 10px;
+}
+
+.evo_map_popup_image_mode_amenity_icons .amenity_icon {
+    margin-left: 10px;
+}
+
+#evo_map_homepage_wrapper .evo_map_popup_image_mode_amenity_icons .amenity_icon {
+    display: none;
+}
+
+#evo_popup_image_mode_description_wrapper {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(41, 41, 41, 1.0);
+    color: white;
+    width: 100%;
+    height: 83px;
+    box-sizing: border-box;
+}
+
+#evo_popup_image_mode_previous {
+    z-index: 100;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    background-color: rgba(20, 20, 20, 0.75);
+    border-radius: 25px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+#evo_popup_image_mode_previous i {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: -2px;
+    transform: scale(0.9, 1.1);
+}
+
+#evo_popup_image_mode_next i {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: -1px;
+    transform: scale(0.9, 1.1);
+}
+
+#evo_popup_image_mode_next {
+    z-index: 100;
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    background-color: rgba(20, 20, 20, 0.75);
+    border-radius: 25px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.evo_popup_image_mode_title {
+    position: absolute;
+    top: 0px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(41, 41, 41, 1.0);
+    font-weight: bold;
+    color: white;
+}
+
+.evo_popup_image_mode_label {
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    top: -10px;
+    padding: 10px;
+    padding-right: 90px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+#evo_map_image_mode_slider {
+    height: 160px;
+    background: rgba(181, 181, 181, 0.50);
+    z-index: 99;
+    position: absolute;
+    bottom: 15px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+#evo_popup_image_mode_slider_previous {
+    position: absolute;
+    left: 5px;
+    top: 35%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#evo_popup_image_mode_slider_next {
+    position: absolute;
+    right: 22px;
+    top: 35%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#evo_map_popup p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.evo_map_popup_feature_name {
+    padding: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.0em;
+    margin: 0px;
+    width: 200px;
+}
+
+.evo_map_popup_feature_description {
+    padding: 10px;
+    padding-top: 5px;
+    margin: 0px;
+}
+
+.evo_place_name {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.evo_place_name_separator {
+    border-bottom: 1px #fff solid;
+    margin-left: 15px;
+    margin-right: 15px
+}
+
+.evo_place_label {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 0px;
+    max-width: 100%;
+}
+
+.place_details_row .row {
+    margin-top: 10px;
+}
+
+.evo_map_popup_more_info_button {
+    border-radius: 5px;
+    border-style: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: #449922;
+    font-size: 13px;
+    text-align: center;
+    padding: 2px;
+}
+
+#evo_popup_image_mode_description_wrapper .evo_map_popup_more_info_button {
+    top: 20px;
+}
+
+.evo_map_popup_more_info_button a {
+    color: white
+}
+
+.evo_map_social_icon {
+    font-size: 2em;
+    padding: 10px;
+}
+
+.evo_legend_home_link {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.evo_legend_home_link a {
+    color: white;
+    font-size: 2em;
+}
+
+#evo_map_evo_toolbar {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.evo_zoom_out_inner {
+    display: inline-block;
+    transform: translateY(-2px);
+}
+
+.evo_zoom_in_inner {
+    display: inline-block;
+}
+
+.evo_map_zoom_in_button {
+    color: rgba(30, 30, 200, 1.0);
+    position: relative;
+    padding: 5px;
+    z-index: 152;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 25px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    height: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.evo_map_zoom_out_button {
+    color: rgba(30, 30, 200, 1.0);
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    padding: 5px;
+    width: 25px;
+    z-index: 152;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    height: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.evo_map_satellite_toggle_button {
+    color: rgba(30, 30, 200, 1.0);
+    position: relative;
+    padding: 5px;
+    z-index: 152;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    width: 25px;
+    height: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    transform: translateY(-4px);
+}
+
+#evo_311_content_wrapper {
+    margin-top: -275px;
+    min-height: 900px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#evo_311_content_wrapper select {
+    display: block;
+}
+
+.evo_place {
+    width: 100%;
+    background-color: #E9E9E9;
+    box-shadow: 0 1px 2px #AAA;
+}
+
+.evo_place .evo_place_name {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.evo_place .evo_place_photo img {
+    width: 150px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.evo_place .evo_place_address {
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.evo_place .evo_place_address_city {
+    display: inline;
+}
+
+.evo_place .evo_place_address_state {
+    display: inline;
+}
+
+.evo_place .evo_place_address_zip_code {
+    display: inline;
+}
+
+.evo_place_detail_photo img {
+    max-width: 100%;
+}
+
+.evo_place .evo_place_content_url {
+    margin-left: -10px;
+}
+
+.evo_place_detail_photo_label {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.place_details_row {
+    min-height: 600px;
+    padding-top: 20px;
+}
+
+.evo_more_information_link {
+    float: right;
+}
+
+.evo_311_service_group_heading {
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-style: solid;
+    margin: 2px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.evo_311_service_group_description {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.8em;
+    padding-left: 30px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.evo_311_service_description {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.7em;
+    padding-left: 60px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.evo_311_service_heading {
+    border-bottom: 1px dotted rgba(180, 180, 180, 1.0);
+}
+
+.evo_311_service_group_label {
+    background-color: rgba(210, 210, 210, 0.25);
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 0.8em;
+}
+
+.evo_311_service_label {
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding-left: 40px;
+    font-size: 0.7em;
+}
+
+#evo_311_form {
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px;
+    min-height: 600px;
+    border-radius: 5px;
+    margin-bottom: 90px;
+}
+
+#evo_311_form .description {
+    width: 100%;
+}
+
+#evo_311_breadcrumbs {
+    padding: 5px;
+}
+
+.evo_311_breadcrumb_separator {
+    display: inline-block;
+    transform: translateY(0px);
+}
+
+.evo_311_breadcrumb_hide_form_link {
+    padding-right: 10px;
+}
+
+.evo_311_breadcrumb_group {
+    display: inline;
+    padding-left: 10px;
+}
+
+#evo_311_update_map_to_current_location {
+    width: 56px !important;
+    background-color: white !important;
+    text-align: center;
+    border-radius: 0px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: 30px;
+    z-index: 501;
+    position: absolute;
+    display: none;
+}
+
+#evo_311_update_map_to_current_location i {
+    font-size: 20px;
+    color: #4C73BE;
+}
+
+.evo_311_geocode_radio {
+    display: inline-block !important;
+    width: 30px !important;
+    transform: translateY(3px);
+}
+
+.evo_place_container {
+    padding: 30px;
+}
+
+.evo_311_form_label_name__description {
+    margin-bottom: 5px;
+}
+
+.evo_311_form_label_required_div {
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#evo_311_reverse_geocode_address {
+    display: inline-block !important;
+    width: 20px !important;
+}
+
+#evo_311_geocode_address {
+    display: inline-block !important;
+    width: 20px !important;
+}
+
+.evo_311_form_label {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.evo_311_form_form {
+    padding: 10px;
+}
+
+.evo_311_form_button {
+    padding: 10px;
+    float: right;
+    right: 30px;
+    position: relative;
+    bottom: 0px;
+    margin-top: 20px;
+}
+
+#evo_311_upload_file_add {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(20, 160, 20, 1.0);
+    text-align: left;
+    margin-top: 4px;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: sans-serif;
+}
+
+#evo_311_upload_file_add #evo_311_upload_files_list {
+    font-size: 14px;
+}
+
+#evo_311_upload_file_label {
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: none;
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+    transform: translateY(-5px);
+}
+
+.evo_311_remove_file_input_from_list {
+    display: inline-block;
+    cursor: pointer;
+    color: rgba(240, 20, 20, 1.0);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 32px;
+    font-family: sans-serif;
+    transform: translateY(4px) scaleX(1.25);
+}
+
+#evo_311_upload_files_list .evo_311_file_upload_input {
+    display: inline-block;
+    border: 0px solid white;
+    color: transparent;
+}
+
+#evo_311_upload_files_list {
+    margin-top: 0px;
+}
+
+#evo_311_form_message {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#evo_311_recaptcha {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+#evo_311_form input,
+#evo_311_form textarea {
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+#evo_311_form textarea {
+    width: 90%;
+}
+
+.evo_311_file_upload_input_status {
+    display: inline-block;
+    width: 100% !important;
+    margin-left: 0px !important;
+}
+
+#evo_311_form input:focus,
+#evo_311_form textarea:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+#evo_311_form input {
+    display: block;
+}
+
+#evo_311_form textarea {
+    display: block;
+}
+
+.evo_311_login_label {
+    font-weight: bold;
+    width: 90px;
+    display: inline-block;
+}
+
+#evo_311_login_message {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.evo_311_login_input {
+    margin-bottom: 3px;
+    padding: 2px;
+}
+
+#evo_311_address_1 {
+    display: inline-block !important;
+}
+
+#evo_311_address_1_label {
+    font-weight: bold;
+    width: 135px;
+    display: inline-block;
+    text-align: right;
+}
+
+#evo_311_address_2 {
+    display: inline-block !important;
+}
+
+#evo_311_address_2_label {
+    font-weight: bold;
+    width: 135px;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: right;
+}
+
+#evo_311_city_label {
+    font-weight: bold;
+    width: 135px;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: right;
+}
+
+#evo_311_city {
+    display: inline-block !important;
+}
+
+#evo_311_state_label {
+    font-weight: bold;
+    width: 135px;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: right;
+}
+
+#evo_311_postal_code {
+    display: inline-block !important;
+}
+
+#evo_311_postal_code_label {
+    font-weight: bold;
+    width: 135px;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: right;
+}
+
+#evo_311_state {
+    margin: 5px;
+    display: inline-block !important;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+#evo_department_shortcut_selector {
+    font-size: 15px;
+    font-family: open-sans, sans-serif;
+}
+
+#evo_department_shortcut_selector > li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#evo_department_shortcut_selector .evo_department_shortcut {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0a6aa1;
+}
+
+#evo_department_filter_box {
+    background-color: rgba(210, 210, 210, 1.0);
+    width: 100%;
+    border-radius: 10px;
+}
+
+#evo_department_filter_box input {
+    width: 75%;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#evo_department_filter_box_clear {
+    background-color: rgba(210, 210, 210, 1.0);
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#evo_department_filter_box_content {
+    padding: 20px;
+}
+
+.evo_department_box_main_page {
+    padding: 20px;
+    width: 100%;
+    min-height: 200px;
+    overflow: auto;
+}
+
+.evo_department_box_main_page:nth-child(odd) {
+    background-color: rgba(210, 210, 210, 1.0);
+}
+
+.evo_department_box_main_page:nth-child(even) {
+    background-color: rgba(240, 240, 240, 1.0);
+}
+
+.evo_department_box_main_page .evo_department_short_description {
+    padding: 10px;
+}
+
+.evo_department_box_main_page .evo_department_link_wrapper a {
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #044062;
+}
+
+.evo_department_box_main_page .contact_information_title, .evo_department_box_main_page .staff_directory_heading {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.evo_department_box_main_page .contact_information_city {
+    display: inline-block;
+}
+
+.evo_department_box_main_page .contact_information_state_abbreviation {
+    display: inline-block;
+}
+
+.evo_department_box_main_page .contact_information_zip_code {
+    display: inline-block;
+}
+
+.evo_department_box_main_page .contact_information_points_of_contact {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.evo_department_box_main_page .contact_information_directions_wrapper {
+    text-decoration: none;
+    cursor: pointer;
+    color: #6090C0;
+}
+
+.evo_department_left_column .contact_information_title, .evo_department_left_column .staff_directory_link, .evo_department_left_column .evo_department_side_menu_title {
+    background: rgba(90, 90, 90, 1.0);
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.evo_department_right_column .contact_information_title, .evo_department_right_column .staff_directory_link, .evo_department_right_column .evo_department_side_menu_title {
+    background: rgba(90, 90, 90, 1.0);
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.evo_department_side_menu_wrapper #evo_department_side_menu ul {
+    list-style: none;
+}
+
+.evo_department_detail_icon_column i {
+    font-size: 32px;
+    color: #444A5E;
+}
+
+.evo_department_detail_contact_information_wrapper {
+    background-color: rgba(231, 231, 231, 1.0);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.evo_department_detail_contact_information_wrapper p {
+    margin: 0px;
+}
+
+.evo_department_detail_contact_information_wrapper .contact_information_city {
+    display: inline-block;
+}
+
+.evo_department_detail_contact_information_wrapper .contact_information_state_abbreviation {
+    display: inline-block;
+}
+
+.evo_department_detail_contact_information_wrapper .contact_information_zip_code {
+    display: inline-block;
+}
+
+.evo_department_detail_contact_information_wrapper .contact_information_directions {
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.evo_department_content_wrapper .contact_information_point_of_contact .point_of_contact_job_title {
+    display: block;
+    font-weight: bold;
+}
+
+.evo_department_box_main_page .contact_information_point_of_contact .point_of_contact_title {
+    display: inline-block;
+}
+
+.evo_department_box_main_page .contact_information_point_of_contact .point_of_contact_name {
+    display: inline-block;
+}
+
+.evo_department_content_wrapper .contact_information_point_of_contact .point_of_contact_title {
+    display: inline-block;
+}
+
+.evo_department_content_wrapper .contact_information_point_of_contact .point_of_contact_name {
+    display: inline-block;
+}
+
+.evo_department_content_wrapper .contact_information_point_of_contact {
+    background: rgba(231, 231, 231, 1.0);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    margin-top: 0px;
+}
+
+.evo_department_content_wrapper .contact_information_point_of_contact .evo_department_detail_icon_column i {
+    font-size: 24px;
+    color: #444A5E;
+}
+
+.evo_department_content_wrapper .hours_wrapper {
+    background: rgba(231, 231, 231, 1.0);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    margin-top: 0px;
+}
+
+.evo_department_content_wrapper .hours_wrapper .hours_title {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#evo_application_content {
+    padding-bottom: 20px;
+    padding-top: 5px;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#evo_application_content_wrapper {
+    padding-bottom: 20px;
+    overflow-y: hidden;
+    /*Removed per request from JM, 2020-06-16*/
+    /*min-height: 100vh;*/
+    min-height: auto;
+    display: flex;
+}
+
+#evo_application_title {
+    min-height: 30px;
+}
+
+.evo_department_content_wrapper .evo_news_title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.evo_department_content_wrapper .evo_calendar_title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.evo_department_content_wrapper .evo_department_news_box {
+    padding-top: 15px;
+}
+
+.evo_department_content_wrapper .evo_department_calendar_box {
+    padding-top: 15px;
+}
+
+.evo_department_bottom_content_section_wrapper {
+    padding-top: 15px;
+}
+
+#evo_department_slideshow img {
+    margin: 0 auto;
+}
+
+.evo_grid_based_theme #evo_department_slideshow {
+    height: 350px;
+    margin-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .item {
+    width: 100%;
+    height: 350px !important;
+}
+
+.evo_grid_based_theme #evo_department_slideshow img {
+    object-fit: cover;
+    position: absolute;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow {
+    height: 100%;
+    position: relative;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_slide {
+    height: 0px;
+    opacity: 0;
+    transition: opacity 1.25s ease-in-out;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_slide.current_slide {
+    opacity: 1;
+    transition: opacity 1.25s ease-in-out;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_slides_wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_slides_wrapper .current_slide img {
+    opacity: 1;
+    z-index: 0;
+    transition: opacity 1.25s ease-in-out;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_indicators {
+    list-style-type: none;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_previous {
+    position: absolute;
+    top: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    z-index: 5000;
+    color: black;
+    border-radius: 50%;
+    left: 5px;
+
+    width: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_next {
+    position: absolute;
+    top: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    z-index: 5000;
+    color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+    width: 10px;
+    right: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_slides_wrapper {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    border-top: 0px black solid;
+    height: 350px;
+    overflow: hidden;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_slides_wrapper .item {
+    width: 100%;
+    height: 100%;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_slides_wrapper img {
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.25s ease-in-out;
+
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_caption_wrapper {
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 0px;
+    opacity: 0;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .current_slide .evo_slideshow_caption_wrapper {
+    opacity: 1;
+}
+
+.evo_grid_based_theme #evo_department_slideshow .evo_slideshow_photo_credits_wrapper {
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+    z-index: 5000;
+}
+
+.text-danger {
+    color: red;
+}
+
+.evo_grid_based_theme #id_form label {
+    font-weight: bold;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    max-width: 100%
+}
+
+.evo_grid_based_theme #id_form input {
+    font-weight: bold;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    width: 250px;
+    max-width: 100%
+}
+
+.evo_grid_based_theme #id_form select {
+    font-weight: bold;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    width: 250px;
+    max-width: 100%
+}
+
+
+.evo_grid_based_theme #id_form textarea {
+    font-weight: bold;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    width: 500px;
+    height: 150px;
+    max-width: 100%
+}
+
+.evo_grid_based_theme #id_form #form-submit {
+    background-color: #228D22;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.evo_grid_based_theme #id_form {
+    position: relative;
+}
+
+.evo_grid_based_theme .form_input_wrapper {
+    grid-gap: 5px;
+}
+
+.evo_grid_based_theme #id_form #form-submit .g-recaptcha {
+    margin-top: 20px;
+}
+
+.evo_grid_based_theme #id_form .evo_radio_wrapper label {
+    width: unset;
+}
+
+.evo_grid_based_theme #id_form .evo_radio_wrapper input {
+    width: unset;
+}
+
+.evo_grid_based_theme #id_form .evo_form_checkbox_wrapper label {
+    width: unset;
+}
+
+.evo_grid_based_theme #id_form .evo_form_checkbox_wrapper input {
+    width: unset;
+}
+
+
+.evo_department_middle_column {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.evo_department_news_box #news_posts_grid_carousel .carousel-indicators {
+    display: none;
+}
+
+#evo_departments_title_name {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: "open-sans", sans-serif;
+    font-weight: bold;
+    margin-top: 1px;
+    color: black;
+    position: relative;
+}
+
+.evo_departments_breadcrumb_separator {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-size: 12px;
+    transform: translateY(-1px);
+}
+
+.evo_departments_breadcrumbs {
+    display: block;
+    background: rgba(231, 231, 231, 1.0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.evo_departments_breadcrumbs a {
+    color: black;
+    font-size: 12px;
+    transform: translateY(-1px);
+    display: inline-block;
+}
+
+#evo_department_related_page_wrapper {
+    margin-bottom: 10px;
+}
+
+#evo_application_content_wrapper .evo_department_right_column {
+    margin-left: -10px;
+    max-width: 100vw;
+}
+
+.evo_department_related_page_title {
+    background: rgba(90, 90, 90, 1.0);
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+
+.evo_department_related_page_link {
+    display: inline-block;
+    background: transparent;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    width: 100%;
+    margin-right: -5px;
+}
+
+
+.evo_department_related_pages_level {
+    width: 95%;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+#evo_department_related_page_wrapper .evo_department_page_caret {
+    display: inline-block;
+    margin-left: -40px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transform: translate(0px, 2px);
+}
+
+.evo_department_related_page_current_page {
+    font-weight: bold;
+}
+
+#department_social_icons {
+    color: black;
+    right: 0px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #e1e1e1;
+}
+
+#department_social_icons i {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#department_social_icons a {
+    color: #0085cf;
+    font-size: 28px;
+}
+
+.evo_department_calendar_box .evo_tab__events {
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.evo_department_calendar_box .evo_tab__events {
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.evo_department_news_box .evo_tab__news {
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+#evo_department_slideshow .carousel-caption {
+    width: 100%;
+    background: rgba(80, 80, 80, 0.8);
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    height: 100px;
+}
+
+#evo_department_slideshow .carousel-caption h3 {
+    margin-top: -5px;
+    text-align: left;
+    padding-left: 25px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0px;
+    font-family: "open-sans", sans-serif;
+    font-size: 20px;
+}
+
+#evo_department_slideshow .carousel-caption p {
+    text-align: left;
+    padding-left: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0px;
+    font-family: "open-sans", sans-serif;
+}
+
+#evo_department_slideshow .item img {
+    width: 100%;
+}
+
+#evo_department_slideshow .carousel-caption a {
+    color: rgba(225, 175, 20, 1.0);
+}
+
+#evo_department_slideshow .carousel-control.left {
+    background: transparent;
+}
+
+#evo_department_slideshow .carousel-control.right {
+    background: transparent;
+}
+
+#evo_department_slideshow .carousel-control {
+    opacity: 1.0;
+}
+
+body .evo_param_slideshow .glyphicon {
+    background-color: rgba(20, 20, 20, 0.75);
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    padding-top: 10px;
+}
+
+.wrapper-regionslideshow .carousel-control {
+    background-image: none;
+}
+
+.wrapper-regionslideshow .carousel-control .glyphicon-chevron-left:hover,
+.wrapper-regionslideshow .carousel-control .glyphicon-chevron-right:hover,
+.wrapper-regionslideshow .carousel-control .icon-next:hover,
+.wrapper-regionslideshow .carousel-control .icon-prev:hover {
+    filter: none;
+}
+
+.wrapper-regionslideshow .carousel-control .glyphicon-chevron-left,
+.wrapper-regionslideshow .carousel-control .glyphicon-chevron-right,
+.wrapper-regionslideshow .carousel-control .icon-next,
+.wrapper-regionslideshow .carousel-control .icon-prev {
+    background-color: rgba(20, 20, 20, 0.7);
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    filter: alpha(opacity=90);
+}
+
+body .wrapper-region-slideshow .glyphicon {
+    background-color: rgba(20, 20, 20, 0.75);
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    padding-top: 10px;
+}
+
+.wrapper-regionslideshow .carousel-indicators {
+    display: none;
+}
+
+#evo_department_slideshow .glyphicon {
+    font-size: 32px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 1.0);
+    top: 50%;
+    opacity: 0.8;
+    position: absolute;
+}
+
+#evo_department_slideshow .glyphicon:hover {
+    opacity: 1.0;
+}
+
+#evo_department_contact_us_link {
+    float: right;
+    margin-right: 10px;
+    margin-top: -30px;
+}
+
+#evo_department_contact_us_link i {
+    font-size: 30px;
+    color: #444A5E;
+}
+
+#evo_department_side_menu .navbar-nav {
+    float: unset;
+}
+
+
+#evo_department_side_menu .navbar-nav > li {
+    float: unset;
+}
+
+#evo_departments_contact_us_directory_main_page #evo_department_contact_us_link i {
+    color: white;
+    position: relative;
+    float: right;
+    right: 25px;
+    bottom: 20px;
+}
+
+.contact_us_departments_department_link {
+    display: inline-block;
+    float: right;
+    color: white;
+}
+
+.contact_us_departments_department_link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#evo_department_directory_link {
+    float: right;
+}
+
+#evo_department_directory_link i {
+    font-size: 28px;
+    color: white;
+    margin-right: 5px;
+    margin-top: -4px;
+}
+
+.evo_department_directory_headings {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+}
+
+.evo_department_directory_content_row {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.evo_department_directory_content_row:nth-child(odd) {
+    background-color: rgba(241, 241, 241, 1.0);
+}
+
+.evo_department_contact_us_content {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+.evo_department_content_wrapper .evo_place_photo {
+    margin-left: -50px;
+}
+
+.evo_department_content_wrapper .evo_place_address {
+    margin-left: 50px;
+}
+
+.evo_department_content_wrapper .evo_place_content_url {
+    margin-left: 50px;
+}
+
+.anonymous_MediaPopup {
+    position: fixed !important;
+    height: 60%;
+    width: 90%;
+    top: 345px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+#anonymous_MediaPopup_top_path_breadcumbs {
+    display: inline;
+    float: left;
+    position: absolute;
+    top: 1%;
+}
+
+#anonymous_MediaPopup_top_buttons {
+    display: inline;
+    float: right;
+    position: absolute;
+    top: 0px;
+    left: 80%;
+    text-align: right;
+    padding: 10px;
+    margin-top: -6px;
+}
+
+#anonymous_MediaPopup_content {
+    height: 80%;
+    position: relative;
+    padding-top: 10px;
+    overflow-y: scroll;
+}
+
+.anonymous_media_popup_submit {
+    margin-left: 200px;
+    border: 1px solid #FFFFFF;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    background-color: #228D22;
+}
+
+.anonymous_upload_message {
+    margin-top: 75px;
+}
+
+#evo_mini_calendar {
+    width: 275px;
+}
+
+
+/* Mini Calendar Widget Styling */
+
+#calendarFocusMini {
+    width: 100%;
+    background-color: #FFF;
+}
+
+#calendarFocusMini .CalendarMonthTitle {
+    background: transparent;
+    color: rgba(10, 120, 10, 1.0);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#calendarFocusMini td {
+    padding: 5px 0px;
+    font-size: 14px;
+}
+
+#calendarFocusMini .CalendarDayTitle .CalendarSmall {
+    font-size: 14px;
+    background-color: rgba(215, 215, 215, 1.0);
+    color: black;
+    border: 1px solid #c1c1c1;
+}
+
+#calendarFocusMini .CalendarDayNorm {
+    background-color: rgba(255, 255, 255, 1.0);
+    color: #333;
+}
+
+#calendarFocusMini .CalendarOtherMonth {
+    background-color: #FFF;
+    color: gray;
+}
+
+#calendarFocusMini .CalendarWithEvents {
+    text-decoration: underline;
+    color: rgba(10, 120, 10, 1.0);
+}
+
+#calendarFocusMini .CalendarDayHL,
+#calendarFocusSmall .CalendarDayHLToday {
+    background-color: #CC0607;
+}
+
+#calendarFocusMini .CalendarDayNorm.CalendarSmall.calendar_small_today {
+    background-color: rgba(215, 215, 215, 1.0);
+}
+
+#evo_alert {
+    z-index: 25000;
+}
+
+#evo_alerts_message_box {
+    position: fixed;
+    z-index: 25000;
+    height: 90px;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(60, 60, 60, 1.0);
+    color: white;
+    padding: 25px;
+    overflow-y: scroll;
+}
+
+.evo_alerts_message_box_close {
+    float: right;
+    margin-right: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    border: white 1px solid;
+    padding: 3px;
+    transform: scale(1.25, 1.0);
+    color: red;
+    cursor: pointer;
+}
+
+.evo_alerts_message_box_open {
+    background-color: rgba(60, 60, 60, 1.0);
+    color: white;
+    padding: 5px;
+    width: 125px;
+    text-align: center;
+    cursor: pointer;
+    max-height: 100%;
+}
+
+.events-month-year-heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.events-month-year-content-wrapper {
+    padding-left: 15px;
+}
+
+.evo_form_submit {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+.evo_form_submit:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.evo_payment_form .payment_form_section_label {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: rgba(222, 222, 222, 1.0);
+    padding: 10px;
+    border-radius: 5px;
+    float: left;
+}
+
+.evo_payment_form .payment_form_item_name {
+    transform: translateY(3px);
+}
+
+.evo_payment_form .evo_payment_form_item_quantity_wrapper {
+    float: left;
+}
+
+.evo_payment_form .evo_payment_form_item_quantity {
+    width: 40px;
+    float: unset;
+}
+
+.evo_payment_form .evo_payment_form_item_price {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.evo_payment_form .payment_form_label {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+}
+
+.evo_payment_form_required_asterisk {
+    color: rgba(222, 40, 20, 1.0);
+    display: inline-block;
+    padding-right: 3px;
+    transform: translateY(3px);
+}
+
+#evo_payment_form_square_up_errors td {
+    padding: 10px;
+}
+
+#evo_payment_form_square_up_errors th {
+    padding: 10px;
+}
+
+.evo_payment_form input {
+    float: left;
+}
+
+.evo_payment_form select {
+    float: left;
+}
+
+.payment_form_validation_error {
+    color: red;
+}
+
+.evo_payment_form_message {
+    font-weight: bold;
+    padding: 25px;
+    display: block;
+}
+
+.evo_property_tax_search_type_selection_box {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    font-family: sans-serif;
+    width: 103%;
+}
+
+.evo_property_tax_search_type_selection_box > ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: -20px;
+}
+
+.evo_property_tax_search_type_selection_box li {
+    cursor: pointer;
+    color: #006699;
+}
+
+.evo_property_tax_search_type_selection_box li:hover {
+    text-decoration: underline;
+}
+
+.evo_property_tax_search_type_selection_box li.evo_tab_current_selection:hover {
+    text-decoration: none;
+}
+
+.evo_property_tax_search_type_selection_box_heading {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 16px;
+    color: rgba(90, 90, 90, 1.0);
+}
+
+.evo_property_tax_search_form_wrapper input {
+    width: 100%;
+}
+
+.evo_property_tax_search_form_heading {
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 16px;
+    color: rgba(90, 90, 90, 1.0);
+}
+
+.evo_property_tax_form_message {
+    color: red;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.evo_property_tax_search_form_wrapper {
+    min-height: 225px;
+}
+
+.evo_property_tax_search_form_wrapper select {
+    margin-bottom: 10px;
+}
+
+.evo_property_tax_search_form_wrapper label {
+    text-align: left;
+    width: 100%;
+}
+
+.evo_property_tax_form_required_asterisk {
+    color: rgba(222, 40, 20, 1.0);
+    display: inline-block;
+    padding-right: 3px;
+    transform: translateY(3px);
+}
+
+.evo_property_tax_search_results_summary_wrapper {
+    background-color: rgba(210, 210, 210, 1.0);
+    height: 175px;
+    width: 600px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+#evo_form_wizard_next {
+    padding: 5px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    width: 75px;
+    text-align: center;
+    background-color: rgba(90, 160, 250, 1.0);
+    margin: 5px;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#evo_form_wizard_previous {
+    padding: 5px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    width: 75px;
+    text-align: center;
+    background-color: rgba(90, 160, 250, 1.0);
+    margin: 5px;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.evo_param_calendar_with_events {
+    margin-top: 45px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    transform: translate(0px, 3px);
+}
+
+#evo_calendar_with_events_wrapper {
+    width: 100%;
+}
+
+#evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs .evo_calendar_with_events_tab:nth-child(1) {
+    color: rgba(105, 155, 60, 1);
+}
+
+#evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs .evo_calendar_with_events_tab:nth-child(2) {
+    color: rgba(190, 83, 53, 1);
+}
+
+#evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs .evo_calendar_with_events_tab:nth-child(3) {
+    color: rgba(143, 52, 121, 1);
+}
+
+#evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs .evo_calendar_with_events_tab:nth-child(4) {
+    color: rgba(102, 131, 177, 1);
+}
+
+#evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs .evo_calendar_with_events_tab:nth-child(5) {
+    color: rgba(155, 221, 140, 1);
+}
+
+#evo_calendar_with_events_wrapper .evo_calendar_with_events_tab {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    border-top: 1px solid rgba(178, 178, 175, 1.0);
+    border-left: 1px solid rgba(178, 178, 175, 1.0);
+    border-right: 1px solid rgba(178, 178, 175, 1.0);
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: rgba(40, 70, 200, 1.0);
+    background-color: rgba(255, 255, 255, 1.0);
+    box-shadow: 2px -1px 5px 1px rgba(186, 175, 175, 0.7);
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+#evo_calendar_with_events_month_overall_wrapper {
+    display: inline-block;
+    width: 400px;
+    margin-left: 12px;
+}
+
+#evo_calendar_with_events_day_of_week_and_month_wrapper {
+    background-color: rgba(255, 255, 255, 1.0);
+    height: 300px;
+    border-radius: 20px;
+    padding: 4px;
+    margin: 4px;
+    box-shadow: 0px 1px 6px rgba(140, 140, 140, 1.0);
+    width: 208px;
+    display: inline-block;
+    float: left;
+}
+
+#evo_calendar_with_events_day_of_week_wrapper {
+    height: 50px;
+    border-radius: 18px 18px 3px 3px;
+    text-align: center;
+    width: 200px;
+}
+
+#evo_calendar_with_events_day_of_week {
+    font-size: 22px;
+    padding: 10px;
+    font-family: 'Marcellus', serif;
+    border-radius: 18px 18px 3px 3px;
+    background-color: rgba(225, 225, 225, 1.0);
+    color: rgba(50, 100, 190, 1.0);
+}
+
+#evo_calendar_with_events_day_of_month {
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-top: 30px;
+    font-size: 120px;
+    font-family: 'Marcellus', serif;
+    font-weight: bold;
+    color: rgba(150, 150, 150, 1.0);
+    text-align: center;
+    width: 200px;
+}
+
+#evo_calendar_with_events_table {
+    font-family: aleo, serif;
+    height: 260px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#evo_calendar_with_events_month_name {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(35, 90, 125, 1.0);
+    border-radius: 15px 15px 0px 0px;
+    height: 75px;
+    color: white;
+    font-family: 'Marcellus', serif;
+    padding-top: 15px;
+}
+
+.evo_calendar_with_events_heading {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+#evo_calendar_with_events_previous {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 10px;
+    transform: translateY(5px);
+    cursor: pointer;
+    left: 20px;
+    top: 17px;
+    background-color: rgba(15, 30, 60, 1.0);
+    color: rgba(255, 255, 255, 1.0);
+    border-radius: 15px;
+    width: 30px;
+    text-align: center;
+    float: left
+}
+
+#evo_calendar_with_events_next {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 10px;
+    transform: translateY(5px);
+    cursor: pointer;
+    right: 20px;
+    top: 17px;
+    background-color: rgba(15, 30, 60, 1.0);
+    color: rgba(255, 255, 255, 1.0);
+    border-radius: 15px;
+    width: 30px;
+    text-align: center;
+    float: right;
+}
+
+#evo_calendar_with_events_previous i {
+    display: inline-block;
+    transform: translateX(-6px);
+}
+
+#evo_calendar_with_events_next i {
+    display: inline-block;
+    transform: translateX(6px);
+}
+
+.evo_calendar_with_events_day {
+    text-align: center;
+    color: white;
+}
+
+#evo_calendar_with_events_day_of_week_and_month_wrapper {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.evo_calendar_with_events_make_non_opaque {
+    opacity: 1 !important;
+}
+
+#evo_calendar_with_events_table_wrapper {
+    padding: 15px;
+    background-color: rgba(40, 120, 160, 1.0);
+    border-radius: 0px 0px 0px 15px;
+}
+
+#evo_calendar_with_events_table .evo_calendar_with_events_day_today {
+    color: rgba(40, 120, 160, 1.0);
+    background-color: rgba(255, 255, 255, 1.0);
+}
+
+.evo_calendar_with_events_day_has_events {
+    background-color: rgba(35, 90, 125, 1.0);
+    cursor: pointer;
+}
+
+.evo_calendar_with_events_day_previous_month {
+    color: rgba(50, 50, 50, 1.0);
+}
+
+.evo_calendar_with_events_day_next_month {
+    color: rgba(50, 50, 50, 1.0);
+}
+
+.evo_calendar_with_events_today {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 12px;
+    color: rgba(140, 140, 140, 1.0);
+}
+
+.evo_calendar_with_events_event .event-date-text {
+    color: rgba(50, 40, 140, 1.0);
+    font-family: 'Marcellus', serif;
+    font-size: 15px;
+}
+
+.evo_calendar_with_events_event .event-title {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(50, 40, 200, 1.0);
+}
+
+#evo_calendar_with_events_wrapper .evo_calendar_with_events_tab.evo_calendar_with_events_currently_selected_tab {
+    font-weight: bold;
+    padding-top: 10px;
+    margin-top: -8px;
+}
+
+.evo_calendar_with_events_event .event_start_end_time {
+    display: block;
+    font-size: 12px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+}
+
+.evo_calendar_with_events_event .event_separator {
+    width: 100%;
+    height: 4px;
+    border-top: solid 1px rgba(43, 43, 43, 1.0);
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+
+#evo_calendar_with_events_events_wrapper {
+    height: 361px;
+    overflow-y: auto;
+    width: 500px;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    padding: 6px;
+    border-right: 4px solid rgba(181, 181, 181, 0.75);
+    border-bottom: 4px solid rgba(181, 181, 181, 0.75);
+    border-top: 4px solid rgba(181, 181, 181, 0.75);
+    transform: translate(-11px, 3px);
+    padding-left: 12px;
+    position: absolute;
+    top: 45px;
+    left: 655px;
+}
+
+#evo_calendar_with_events_day_binder_rings {
+    left: 185px;
+    position: relative;
+    z-index: 50;
+    margin-top: -280px;
+}
+
+
+/* evo_calendar_with_events mobile and tablet resolutions */
+#evo_overall_content_wrapper .evo_department_news_box_panels {
+    height: 400px;
+}
+
+@media (max-width: 1500px) {
+    .evo_news_posts_panels .news_post_columns_inner_wrapper img {
+        max-width: 100% !important;
+        height: unset !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .evo_news_posts_panels .news_post_columns_inner_wrapper {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    #evo_overall_content_wrapper .evo_department_news_box_panels {
+        height: 800px;
+    }
+
+
+    #evo_calendar_with_events_day_of_week_and_month_wrapper {
+        width: 150px;
+    }
+
+    #evo_calendar_with_events_day_of_week_wrapper {
+        width: 150px;
+    }
+
+    #evo_calendar_with_events_day_of_week {
+        width: 142px;
+    }
+
+    #evo_calendar_with_events_day_of_month {
+        font-size: 90px;
+        width: 150px;
+    }
+
+    #evo_calendar_with_events_month_overall_wrapper {
+        width: 360px;
+    }
+
+    #evo_calendar_with_events_events_wrapper {
+        width: 400px;
+        left: 544px;
+    }
+
+    #evo_calendar_with_events_day_binder_rings {
+        left: 128px;
+        margin-top: -220px;
+    }
+}
+
+@media (max-width: 998px) {
+    #evo_calendar_with_events_events_wrapper {
+        width: 375px;
+    }
+}
+
+@media (max-width: 990px) {
+    #evo_calendar_with_events_previous {
+        font-size: 16px;
+        top: 21px;
+        width: 14px;
+    }
+
+    #evo_calendar_with_events_next {
+        font-size: 16px;
+        top: 21px;
+        width: 14px;
+    }
+
+    #evo_calendar_with_events_events_wrapper {
+        width: 100%;
+        float: unset;
+        display: block;
+        left: unset;
+        top: unset;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    #evo_calendar_with_events_wrapper .evo_calendar_with_events_tab {
+        border-radius: 5px;
+    }
+
+    #evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs {
+        top: unset;
+        left: 0px;
+        right: unset;
+        position: relative;
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+
+    #evo_calendar_with_events_day_binder_rings {
+        left: 130px;
+        margin-top: -215px;
+    }
+}
+
+@media (max-width: 768px) {
+    .evo_grid_based_theme #id_form #form-submit .g-recaptcha {
+        padding-bottom: 20px;
+    }
+
+    #evo_calendar_with_events_month_overall_wrapper {
+        width: 230px;
+    }
+
+    #evo_calendar_with_events_day_of_month {
+        font-size: 60px;
+        width: 90px;
+        margin-left: -18px;
+    }
+
+    #evo_calendar_with_events_day_binder_rings {
+        left: 70px;
+        margin-top: -170px;
+    }
+
+    #evo_calendar_with_events_day_of_week_and_month_wrapper {
+        width: 90px;
+    }
+
+    #evo_calendar_with_events_day_of_week_wrapper {
+        width: 90px;
+    }
+
+    #evo_calendar_with_events_day_of_week {
+        width: 83px;
+        font-size: 14px;
+    }
+
+    #evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs {
+        float: unset;
+    }
+
+    #evo_calendar_with_events_wrapper .evo_calendar_with_events_tab {
+        display: block;
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #evo_311_form #evo_311_submission_send_email_updates {
+        transform: scale(1.5);
+    }
+
+    #evo_311_form #evo_311_submission_send_sms_updates {
+        transform: scale(1.5);
+    }
+
+    .evo_department_action_button_image {
+        height: 0px;
+    }
+
+    #evo_application_content .evo_department_action_button_link {
+        width: 100% !important;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #evo_calendar_with_events_day_of_week_and_month_wrapper {
+        display: none;
+    }
+
+    #evo_calendar_with_events_day_binder_rings {
+        display: none;
+    }
+}
+
+#evo_property_tax_results_wrapper {
+    width: 100%;
+    border: 1px solid black;
+    min-height: 200px;
+    max-height: 600px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#evo_property_tax_details_wrapper {
+    width: 100%;
+    border: 1px solid black;
+    height: 650px;
+    overflow-x: auto;
+    overflow-y: scroll;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#evo_property_tax_details_wrapper .row {
+    width: 100%;
+}
+
+.evo_property_tax_detail_value {
+    background-color: rgba(211, 211, 211, 1.0);
+    margin-top: 3px;
+    width: 95%;
+    padding: 1px;
+    padding-left: 3px;
+    margin-left: -3px;
+}
+
+.evo_property_tax_detail_currency {
+    text-align: right !important;
+}
+
+.evo_property_tax_detail_label {
+    font-weight: bold;
+    text-align: right;
+}
+
+.evo_sortable_column {
+    cursor: pointer;
+}
+
+.evo_property_tax_detail_pdf_link {
+    float: right;
+    margin-top: -35px;
+    margin-right: 30px;
+    font-weight: bold;
+    color: rgba(200, 100, 100, 1.0);
+}
+
+#evo_property_search_clear {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+#evo_property_search_clear i {
+    transform: translate(-0px, -3px);
+}
+
+.evo_map_popup_amenity_icons {
+    padding: 10px;
+}
+
+.evo_map_popup_amenity_icons img {
+    width: 50px;
+    padding: 2px;
+}
+
+.evo_map_amenity_icons {
+    padding: 5px;
+}
+
+.evo_map_amenity_icons img {
+    padding: 10px;
+}
+
+.evo_slider_image_mode_feature_id_across_layers {
+    position: absolute;
+    top: 10px;
+    z-index: 5000;
+    background-color: rgba(150, 40, 30, 1.0);
+    font-size: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: white;
+}
+
+.evo_slider_currently_selected_feature {
+    background-color: white;
+}
+
+.evo_slider_image_mode_feature {
+    width: 169px;
+    height: 160px;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: -10px;
+}
+
+.evo_slider_image_mode_feature:hover {
+    background-color: rgba(97, 192, 219, 1.0);
+}
+
+.evo_slider_image_mode_image {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+}
+
+.evo_slider_image_mode_title {
+    text-align: center;
+    font-size: 11px;
+    height: 35px;
+    position: absolute;
+    width: 150px;
+    bottom: 10px;
+}
+
+.evo_slider_image_mode_feature.evo_slider_image_mode_single_feature_only {
+    width: 90%
+}
+
+.evo_slider_image_mode_feature.evo_slider_image_mode_single_feature_only .evo_slider_image_mode_image {
+    width: 90px;
+    height: 60px;
+}
+
+.evo_slider_image_mode_feature.evo_slider_image_mode_single_feature_only .evo_slider_image_mode_title {
+    left: 140px;
+    top: 19px;
+    bottom: unset;
+    font-weight: bold;
+    width: 120px;
+}
+
+.evo_slider_image_mode_feature.evo_slider_image_mode_single_feature_only .evo_slider_image_mode_description {
+    position: absolute;
+    top: 75px;
+    font-size: 11px;
+    width: 70vw;
+}
+
+.evo_slider_image_mode_feature.evo_slider_image_mode_single_feature_only .evo_map_popup_more_info_button {
+    transform: scale(0.75);
+    top: unset;
+    bottom: -6px;
+    right: 45px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    z-index: 25;
+}
+
+#evo_scroll_down_indicator {
+    background: black;
+    width: 50px;
+    padding: 25px;
+    border-radius: 50px;
+    height: 50px;
+    margin-left: 100px;
+    position: fixed;
+    bottom: 50px;
+}
+
+#evo_scroll_down_indicator i {
+    color: white;
+    font-size: 25px;
+    transform: translateX(-50%) translateY(-13px);
+}
+
+#dialog .evo_event_details_reservation_link_information {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: rgba(150, 150, 150, 1.0);
+    border-radius: 5px;
+}
+
+#dialog .evo_event_details_reservation_link_information a {
+    color: rgba(30, 30, 200, 1.0);
+}
+
+.evo_department_action_button_link {
+    padding: 0px;
+}
+
+.evo_department_action_button_label {
+    background: rgba(80, 80, 80, 0.8);
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    height: auto;
+    bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    box-sizing: border-box;
+    left: 0px;
+}
+
+
+.evo_department_action_button_link {
+    color: white;
+    text-decoration: none;
+}
+
+.evo_department_action_button_label_without_image {
+    width: 100%;
+    position: relative;
+    display: block;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.evo_department_action_button_label_without_image_wrapper {
+    background: rgba(80, 80, 80, 0.8);
+    position: relative;
+    min-height: 64px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+}
+
+.evo_department_action_button_wrapper {
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.evo_department_action_button_wrapper a {
+    width: 100% !important;
+    position: relative;
+}
+
+.evo_department_action_button_image {
+    max-height: 150px;
+    border-color: black;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.evo_department_action_button_link {
+    display: inline-block;
+}
+
+.evo_slideshow_photo_credits_wrapper {
+    position: absolute;
+    top: 65%;
+    right: 0px;
+    padding: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 0px;
+}
+
+.evo_slideshow_photo_credits_wrapper:focus {
+    color: white;
+}
+
+.evo_param_slideshow .carousel-control {
+    background-image: none;
+}
+
+.evo_slideshow_photo_credits_icon {
+    display: inline-block;
+}
+
+.evo_slideshow_photo_credits_icon i {
+    display: inline-block;
+}
+
+.evo_slideshow_photo_credits {
+    display: none;
+    margin-left: 10px;
+}
+
+.evo_contact_information_title_clickable_link {
+    cursor: pointer;
+}
+
+.evo_contact_information_title_clickable_link a {
+    color: white;
+    text-decoration: none;
+
+}
+
+@media (max-width: 768px) {
+    #evo_calendar_with_events_wrapper .evo_calendar_with_events_tab {
+        width: 95%;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    #evo_calendar_with_events_wrapper .evo_calendar_with_events_tab.evo_calendar_with_events_currently_selected_tab {
+        margin-top: unset;
+    }
+
+    .evo_param_calendar_with_events {
+        margin-top: 15px;
+    }
+
+    #evo_department_slideshow .glyphicon {
+        font-size: 18px;
+    }
+
+    #evo_department_slideshow .carousel-caption {
+        height: auto;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #evo_department_slideshow {
+        padding-right: 20px;
+    }
+
+    /* Put department content before department menus in mobile by reversing the overall content, then reversing
+       each column.
+     */
+    .evo_department_left_column {
+        /* transform: scaleY(-1); */
+        margin-bottom: 20px;
+        /* Adds a margin to the top to separate from content */
+    }
+
+    #evo_department_contact_us_link {
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        /* transform: scaleY(-1); */
+        float: none;
+    }
+
+    #evo_department_directory_link {
+        margin-right: 26px;
+    }
+
+    .evo_department_left_column .contact_information_title {
+        width: 95%;
+    }
+
+    .evo_department_detail_contact_information_wrapper {
+        width: 95%;
+    }
+
+    .evo_department_content_wrapper .hours_wrapper {
+        width: 95%;
+    }
+
+    .evo_department_content_wrapper .contact_information_point_of_contact {
+        width: 95%;
+    }
+
+    .evo_full_width_if_mobile {
+        width: 94vw !important;
+    }
+}
+
+.evo_slideshow_widget_carousel_indicators {
+    display: none;
+    /*display: block;*/
+}
+
+.wrapper-regionslideshow .carousel-indicators li.active {
+    background-color: #828282;
+}
+
+.wrapper-regionslideshow .carousel-indicators li {
+    background-color: white;
+}
+
+.wrapper-regionslideshow .carousel-indicators li {
+    border: 1px solid black;
+}
+
+.evo_slideshow_carousel .carousel-indicators li.active {
+    background-color: #828282;
+}
+
+.evo_slideshow_carousel .carousel-indicators li {
+    background-color: white;
+}
+
+.evo_slideshow_carousel .carousel-indicators li {
+    border: 1px solid black;
+}
+
+.evo_param_slideshow .carousel-indicators li.active {
+    background-color: #828282;
+}
+
+.evo_param_slideshow .carousel-indicators li {
+    background-color: white;
+}
+
+.evo_param_slideshow .carousel-indicators li {
+    border: 1px solid black;
+}
+
+.evo_department_news_box #news_posts_carousel {
+    height: auto !important;
+}
+
+.evo_portal_copyright {
+    position: fixed;
+    bottom: 6px;
+    left: 0;
+    width: 150px;
+    text-align: center;
+    color: #888888;
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    #evo_alert {
+        transform: translateY(0px) !important;
+    }
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) and (max-width: 768px) {
+    #evo_alert {
+        position: fixed !important;
+    }
+}
+
+#evo_alert .marquee {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden !important;
+}
+
+#evo_alert .alert-wrapper {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#evo_alert .js-marquee-wrapper > div {
+    overflow-y: hidden !important;
+}
+
+#evo_alert .js-marquee {
+    overflow-y: hidden !important;
+}
+
+#evo_alert .js-marquee-wrapper {
+    overflow-y: hidden !important;
+}
+
+#evo_311_submission_send_email_updates {
+    display: inline-block !important;
+    width: 20px !important;
+}
+
+#evo_311_submission_send_sms_updates {
+    display: inline-block !important;
+    width: 20px !important;
+}
+
+@media (max-width: 425px) {
+    .evo_311_frontend_manage_create_datetime_column {
+        display: none;
+    }
+}
+
+#evo_311_login_form_captcha {
+    text-align: center;
+}
+
+#evo_311_login_form_captcha div:first-of-type {
+    margin: 0 auto;
+}
+
+#evo_311_submit_request_form_captcha {
+    text-align: center;
+}
+
+#evo_311_submit_request_form_captcha div:first-of-type {
+    margin: 0 auto;
+}
+
+#evo_311_login_form {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#evo_311_login_form_wrapper {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: -300px;
+}
+
+#evo_311_login_form_captcha {
+    padding: 10px;
+}
+
+.evo_311_login_label_wide {
+    width: 155px !important;
+}
+
+#evo_311_current_login_status_message {
+    color: rgba(50, 50, 50, 1.0);
+    font-style: italic;
+    margin-top: -21px;
+}
+
+#evo_311_above_content_area_html {
+    margin-top: 250px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    font-size: 14px;
+}
+
+#evo_311_top_link_wrapper {
+    float: right;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: -2px;
+}
+
+#evo_311_portal_view_link {
+    background-color: #538040;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#evo_311_logout_top_link {
+    display: inline-block;
+    background-color: #EB3323;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#evo_311_logout_top_link:hover {
+    text-decoration: underline;
+}
+
+.evo_311_service_group_caret {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+}
+
+#evo_311_map_wrapper {
+    z-index: 500;
+    width: 49%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: relative;
+    margin-top: -30px;
+}
+
+#evo_311_geocode_address,
+#evo_311_do_not_geocode_address,
+#evo_311_reverse_geocode_address {
+    z-index: 502;
+}
+
+#evo_311_current_location_label {
+    font-size: 12px;
+    color: black;
+}
+
+#evo_application_breadcrumbs {
+    background: white;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.evo_311_request_submission_ticket_number {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+#evo_311_service_group_wrapper .evo_311_service_label i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#evo_311_service_group_wrapper .evo_311_service_group_label i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.evo_311_step_label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(105, 105, 105, 1.0);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.evo_311_step_label_current {
+    color: rgba(15, 15, 15, 1.0);
+    text-decoration: underline;
+    background-color: rgba(195, 195, 195, 0.25);
+}
+
+#evo_311_reverse_map_wrapper {
+    transform: translateY(-290px);
+    width: 100%;
+}
+
+#evo_311_step_wrapper {
+    margin-bottom: 20px;
+    z-index: 5000;
+    width: 100%;
+}
+
+#evo_311_review_submission {
+    transform: translateY(-225px);
+    margin-bottom: -225px;
+    margin-top: 240px;
+}
+
+#evo_311_review_top_message {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transform: translateY(-20px);
+}
+
+#evo_311_review_top_heading_message {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.evo_311_review_details_row_title {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: -10px;
+}
+
+.evo_311_review_details_row_content {
+    margin-top: 6px;
+}
+
+#evo_311_review_attached_files_heading {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#evo_311_review_attached_files_sub_heading {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#evo_311_send_my_request {
+    background-color: #538040;
+    border-radius: 7px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border: 0px solid white;
+}
+
+#subscribe_to_updates_heading {
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+
+    .evo_311_review_details_row_title {
+        text-align: left !important;
+    }
+
+    #evo_311_send_my_request {
+        margin-top: 150px;
+        float: unset;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 30px;
+    }
+
+    #evo_311_submit_request_form_captcha {
+        transform: translateY(-185px);
+    }
+
+    #evo_311_map_wrapper {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 1200px;
+    }
+
+    body #evo_311_step_wrapper > .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body #evo_311_step_5_label_wrapper {
+        position: absolute !important;
+        top: 5px;
+    }
+
+    body #evo_311_step_5_label {
+        position: absolute !important;
+        top: -25px;
+    }
+
+    body #evo_311_ticket_map_table_wrapper {
+        margin-top: 30px !important;
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #evo_311_update_map_to_current_location {
+        width: 100%;
+    }
+
+    .evo_311_form_button {
+        float: unset !important;
+        right: unset !important;
+        bottom: unset !important;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .evo_311_geocode_radio_line_break {
+        display: block !important;
+    }
+
+    #evo_311_update_map_to_current_location {
+        margin-top: 165px;
+    }
+}
+
+@media (max-width: 500px) {
+    .evo_grid_based_theme #id_form .form_input_wrapper {
+        display: block;
+        width: 100%;
+    }
+
+    .evo_grid_based_theme #id_form input {
+        width: unset;
+    }
+
+    .evo_grid_based_theme #evo_interior_content_wrapper {
+        display: block;
+    }
+
+    .evo_311_service_group_heading {
+        width: 100vw;
+        margin-left: -40px;
+    }
+
+    .evo_311_service_group_caret {
+        margin-right: 10px;
+    }
+
+    #evo_311_service_group_wrapper .evo_311_service_group_label i {
+        margin-right: 8px;
+    }
+
+    .evo_311_service_group_label {
+        font-size: 0.7em;
+    }
+
+    #evo_311_submit_request_form_captcha {
+        transform: translateY(-200px);
+    }
+
+    #evo_311_send_my_request {
+        transform: translateX(-50%) translateY(30px);
+    }
+}
+
+.evo_layer_heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.evo_layer_details {
+    margin-left: 30px;
+}
+
+.anonymous_media_popup_new_folder_wrapper label {
+    margin-left: 100px;
+    display: inline-block !important;
+}
+
+.anonymous_media_popup_new_folder_wrapper input {
+    margin-left: 20px;
+    transform: translateY(4px);
+}
+
+.anonymous_media_popup_new_folder_wrapper button {
+    margin-left: 315px;
+    margin-top: 10px;
+    color: white;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding: 3px 7px 3px 7px;
+    border-radius: 5px;
+}
+
+.anonymous_media_popup_new_folder_wrapper button:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.evo_footer_very_bottom_of_page {
+    visibility: hidden;
+}
+
+.evo_media_folder_widget_top_panel {
+    background-color: rgba(205, 205, 205, 1.0);
+}
+
+.evo_media_folder_widget_top_panel_left {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgba(90, 90, 90, 1.0);
+}
+
+.evo_media_folder_widget_top_panel_left i {
+    padding: 7px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.evo_media_folder_widget_left_panel_files_list {
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.evo_media_folder_widget_left_panel {
+    padding-left: 2px;
+    border-right: 1px solid rgba(80, 80, 80, 1.0);
+    height: 100%;
+}
+
+.evo_media_folder_widget_left_panel_files_list .evo_media_folder_widget_folder_link {
+    font-size: 14px;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.evo_media_folder_widget_left_panel_files_list .evo_media_folder_widget_folder_link i {
+    padding-right: 10px;
+    font-size: 16px;
+    transform: translateY(1px);
+}
+
+.evo_media_folder_widget_top_panel_right {
+    padding: 10px;
+    width: 100%;
+}
+
+.evo_media_folder_widget_drilldown {
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    margin-left: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.evo_media_folder_widget_drilldown i {
+    padding-right: 10px;
+    font-size: 16px;
+    transform: translateY(1px);
+}
+
+.evo_media_folder_widget_drilldown_all {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.evo_param_media_folder {
+    margin-bottom: 40px;
+    min-height: 500px;
+}
+
+.evo_media_folder_widget_table_wrapper {
+    min-height: 500px;
+}
+
+.evo_media_folder_widget_table {
+    width: 100%;
+}
+
+.evo_media_folder_widget_table tr {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(200, 200, 200, 1.0);
+}
+
+.evo_media_folder_widget_table td {
+    padding: 4px;
+}
+
+.evo_media_folder_widget_top_panel {
+    border-top: 1px solid rgba(80, 80, 80, 1.0);
+    border-bottom: 1px solid rgba(80, 80, 80, 1.0);
+}
+
+.evo_param_media_folder {
+    border: 1px solid rgba(80, 80, 80, 1.0);
+    overflow-y: scroll;
+}
+
+.evo_media_folder_widget_left_panel_filters_list {
+    overflow-y: auto;
+}
+
+.evo_uploaded_heading {
+    min-width: 175px;
+}
+
+.AnyTime-win {
+    z-index: 500000;
+}
+
+#booking_map {
+    height: 250px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 100%;
+}
+
+.booking_request_detail_heading {
+    font-weight: bold;
+}
+
+#booking_content_wrapper {
+    margin-top: -275px;
+    min-height: 900px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#booking_content_wrapper select {
+    display: block;
+}
+
+.booking_service_group_heading {
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-style: solid;
+    margin: 2px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.booking_service_group_description {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.8em;
+    padding-left: 30px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.booking_service_description {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.7em;
+    padding-left: 60px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.booking_service_heading {
+    border-bottom: 1px dotted rgba(180, 180, 180, 1.0);
+}
+
+.booking_service_group_label {
+    background-color: rgba(210, 210, 210, 0.25);
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 0.8em;
+}
+
+.booking_service_label {
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding-left: 40px;
+    font-size: 0.7em;
+}
+
+#booking_form {
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px;
+    min-height: 600px;
+    border-radius: 5px;
+    margin-bottom: 90px;
+}
+
+#booking_form .description {
+    width: 100%;
+}
+
+#booking_breadcrumbs {
+    padding: 5px;
+}
+
+.booking_breadcrumb_separator {
+    display: inline-block;
+    transform: translateY(0px);
+}
+
+.booking_breadcrumb_hide_form_link {
+    padding-right: 10px;
+}
+
+.booking_breadcrumb_group {
+    display: inline;
+    padding-left: 10px;
+}
+
+.booking_form_label_name__description {
+    margin-bottom: 5px;
+}
+
+.booking_form_label_required_div {
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#booking_reverse_geocode_address {
+    display: inline-block !important;
+    width: 20px !important;
+}
+
+.booking_form_label {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.booking_form_form {
+    padding: 10px;
+}
+
+.booking_form_button {
+    padding: 10px;
+    float: right;
+    right: 30px;
+    position: relative;
+    bottom: 0px;
+    margin-top: 20px;
+}
+
+#booking_upload_file_add {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(20, 160, 20, 1.0);
+    text-align: left;
+    margin-top: 4px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: sans-serif;
+}
+
+#booking_upload_file_add #booking_upload_files_list {
+    font-size: 14px;
+}
+
+#booking_upload_file_label {
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: none;
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+    transform: translateY(-5px);
+}
+
+.booking_remove_file_input_from_list {
+    display: inline-block;
+    cursor: pointer;
+    color: rgba(240, 20, 20, 1.0);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 32px;
+    font-family: sans-serif;
+    transform: translateY(4px) scaleX(1.25);
+}
+
+#booking_upload_files_list .booking_file_upload_input {
+    display: inline-block;
+    border: 0px solid white;
+    color: transparent;
+}
+
+#booking_upload_files_list {
+    margin-top: 0px;
+}
+
+#booking_form_message {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#booking_recaptcha {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+#booking_form input,
+#booking_form textarea {
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+#booking_form textarea {
+    width: 90%;
+}
+
+.booking_file_upload_input_status {
+    display: inline-block;
+    width: 100% !important;
+    margin-left: 0px !important;
+}
+
+#booking_form input:focus,
+#booking_form textarea:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+#booking_form input {
+    display: block;
+}
+
+#booking_form textarea {
+    display: block;
+}
+
+.booking_login_label {
+    font-weight: bold;
+    width: 90px;
+    display: inline-block;
+}
+
+#booking_login_message {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.booking_login_input {
+    margin-bottom: 3px;
+    padding: 2px;
+}
+
+#booking_submission_send_email_updates {
+    display: inline-block !important;
+    width: 20px !important;
+}
+
+#booking_submission_send_sms_updates {
+    display: inline-block !important;
+    width: 20px !important;
+}
+
+@media (max-width: 425px) {
+    .booking_frontend_manage_create_datetime_column {
+        display: none;
+    }
+}
+
+#booking_login_form_captcha {
+    text-align: center;
+}
+
+#booking_login_form_captcha div:first-of-type {
+    margin: 0 auto;
+}
+
+#booking_submit_request_form_captcha {
+    text-align: center;
+}
+
+#booking_submit_request_form_captcha div:first-of-type {
+    margin: 0 auto;
+}
+
+#booking_login_form {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#booking_login_form_wrapper {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: -300px;
+}
+
+#booking_login_form_captcha {
+    padding: 10px;
+}
+
+.booking_login_label_wide {
+    width: 155px !important;
+}
+
+#booking_current_login_status_message {
+    color: rgba(50, 50, 50, 1.0);
+    font-style: italic;
+    margin-top: -21px;
+}
+
+#booking_above_content_area_html {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    font-size: 14px;
+}
+
+#booking_top_link_wrapper {
+    float: right;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: -2px;
+}
+
+#booking_portal_view_link {
+    background-color: #538040;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#booking_logout_top_link {
+    display: inline-block;
+    background-color: #EB3323;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#booking_logout_top_link:hover {
+    text-decoration: underline;
+}
+
+.booking_service_group_caret {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+}
+
+#booking_map_wrapper {
+    z-index: 500;
+    width: 45%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    margin-top: -30px;
+}
+
+.booking_step_label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(105, 105, 105, 1.0);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.booking_step_label_current {
+    color: rgba(15, 15, 15, 1.0);
+    text-decoration: underline;
+    background-color: rgba(195, 195, 195, 0.25);
+}
+
+.evo_311_request_submission_ticket_number {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+#booking_service_group_wrapper {
+    margin-bottom: -290px;
+}
+
+#booking_service_group_wrapper .evo_311_service_label i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#booking_service_group_wrapper .evo_311_service_group_label i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.booking_step_label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(105, 105, 105, 1.0);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.booking_step_label_current {
+    color: rgba(15, 15, 15, 1.0);
+    text-decoration: underline;
+    background-color: rgba(195, 195, 195, 0.25);
+}
+
+#booking_reverse_map_wrapper {
+    transform: translateY(-290px);
+    z-index: 5000;
+}
+
+#booking_step_wrapper {
+    margin-bottom: 5px;
+}
+
+#booking_facility_list_wrapper {
+    margin-top: 20px;
+}
+
+#booking_review_submission {
+    transform: translateY(-290px);
+    margin-bottom: -290px;
+    margin-top: 0px;
+}
+
+#booking_review_top_message {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#booking_review_top_heading_message {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.booking_review_details_row_title {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: -10px;
+}
+
+.booking_review_details_row_content {
+    margin-top: 6px;
+}
+
+#booking_review_attached_files_heading {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#booking_review_attached_files_sub_heading {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#booking_send_my_request {
+    background-color: #538040;
+    border-radius: 7px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border: 0px solid white;
+}
+
+.booking_facility_label {
+    background-color: rgba(210, 210, 210, 0.25);
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 1.0em;
+}
+
+.booking_facility_description {
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding-left: 40px;
+    font-size: 1.0em;
+}
+
+.booking_facility_label i {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+#booking_map_photo_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#booking_map_photo_img {
+    position: absolute;
+    width: 100%;
+}
+
+#booking_map_photo_img img {
+    height: 250px;
+}
+
+#booking_map_photo_img_mobile {
+    display: none;
+}
+
+#booking_map_photo_img_mobile_label {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #booking_map_photo_img {
+        display: none;
+    }
+
+    #booking_map_photo_img_mobile {
+        display: block;
+        width: 80vw;
+    }
+
+    #booking_map_photo_img_mobile_label {
+        display: block;
+    }
+
+    .evo_param_media_folder {
+        width: 100vw !important;
+        margin-left: -15px;
+    }
+
+    .evo_media_folder_widget_top_panel_left {
+        width: 100px !important;
+    }
+
+    .evo_media_folder_widget_left_panel_files_list .evo_media_folder_widget_folder_link {
+        width: 100px !important;
+    }
+
+    .evo_media_folder_widget_table_wrapper {
+        left: 100px !important;
+    }
+}
+
+#evo_bookable_calendar .evo_booking_event {
+    text-align: center;
+    font-size: 0.95em;
+}
+
+#evo_bookable_calendar .evo_bookable_event {
+    background-color: rgba(25, 125, 25, 1.0);
+    border-color: rgba(25, 125, 25, 1.0);
+}
+
+#evo_bookable_calendar .evo_bookable_past_event {
+    background-color: rgba(120, 120, 120, 1.0);
+    border-color: rgba(25, 125, 25, 1.0);
+    cursor: not-allowed;
+    display: none;
+}
+
+#evo_bookable_calendar .evo_bookable_full_event {
+    background-color: rgba(150, 90, 90, 1.0);
+    border-color: rgba(25, 125, 25, 1.0);
+    cursor: not-allowed;
+}
+
+#evo_bookable_calendar .evo_bookable_available_event {
+    background-color: rgba(90, 120, 90, 1.0);
+    border-color: rgba(25, 125, 25, 1.0);
+    cursor: pointer;
+}
+
+#evo_bookable_calendar .evo_bookable_closed_event {
+    background-color: rgba(150, 150, 150, 1.0);
+    border-color: rgba(25, 125, 25, 1.0);
+    cursor: not-allowed;
+}
+
+#daily_booking_information_wrapper {
+    background-color: rgba(220, 220, 220, 1.0);
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#daily_booking_information_label {
+    font-weight: bold;
+}
+
+#evo_bookable_calendar {
+    max-width: 1600px;
+    font-size: 0.9em;
+}
+
+#evo_bookable_calendar .fc-past {
+    opacity: 0.3;
+}
+
+#evo_bookable_calendar .fc-future {
+    opacity: 0.75;
+}
+
+.booking_currently_selected_event {
+    border: 10px solid rgba(225, 225, 50, 1.0) !important;
+}
+
+.amenity_icon_title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.four_steps_to_book_facility_heading {
+    font-weight: bold;
+}
+
+#booking_form #evo_bookable_calendar .fc-header-toolbar h2 {
+    font-size: 1.25em;
+}
+
+#booking_facility_details_column {
+    width: 50%;
+    position: absolute;
+    padding-right: 25px;
+}
+
+#evo_portal_content_wrapper #booking_step_wrapper {
+    margin-top: 40px;
+}
+
+.four_steps_to_book_facility_heading {
+    margin-top: 10px;
+}
+
+.evo_table_striped {
+    border-collapse: collapse;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.evo_table_striped th {
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.evo_table_striped tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+.evo_table_striped td {
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    vertical-align: top;
+}
+
+.evo_table_striped tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 1.0);
+}
+
+table.striped {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+table.striped caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+table.striped > tbody > tr > td {
+    padding: 6px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+table.striped > tbody > tr:nth-child(2n+1) > td {
+    background-color: #eee;
+}
+
+table.striped > tbody > tr > th {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    min-width: 100px;
+    border-left: 0px solid #fff;
+}
+
+
+.evo_form_control {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4285;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.evo_form_control:focus {
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#evo_department_related_page_wrapper > .evo_department_related_pages_level > .evo_department_related_pages_level > a {
+    background: unset;
+}
+
+.evo_grid_based_theme .menu_item_title {
+    font-size: 13px;
+    color: rgba(200, 200, 200, 1.0);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.news_post_box_inner_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0px;
+    margin-left: 15px;
+}
+
+.news-box-categories {
+    font-weight: bold;
+    font-size: .85em;
+    color: rgba(40, 40, 150, 1.0);
+    text-transform: uppercase;
+}
+
+.evo_param_news_posts_boxes .first_news_post_box_wrapper {
+    background-color: white;
+}
+
+.evo_param_news_posts_boxes .first_news_post_box_wrapper .news-headline > a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.evo_param_news_posts_boxes .first_news_post_box_wrapper .news-date {
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 0.8em;
+    color: rgba(40, 40, 40, 1.0);
+    display: block;
+}
+
+.evo_param_news_posts_boxes .remaining_news_post_box_wrapper {
+    background-color: white;
+}
+
+.evo_param_news_posts_boxes .remaining_news_post_box_wrapper .news-headline > a {
+    font-size: 1.0em;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.evo_param_news_posts_boxes .first_news_post_box_wrapper .evo_more_information_link {
+    display: inline;
+    float: unset;
+    font-size: 0.8em;
+}
+
+.evo_param_news_posts_boxes .first_news_post_box_wrapper {
+    margin-right: 15px;
+}
+
+.evo_param_news_posts_boxes .remaining_news_post_box_wrapper {
+    margin-right: 15px;
+}
+
+.evo_news_posts .news_post_box {
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.evo_param_grid_alert_scroll {
+    width: auto;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: rgba(25, 50, 80, 0.85);
+    position: relative;
+    height: 30px;
+    overflow-x: hidden;
+    display: none;
+}
+
+.evo_param_grid_alert_popup {
+    background-color: rgba(25, 50, 80, 0.85);
+    position: relative;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.evo_param_grid_alert_popup p {
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-sizing: border-box;
+}
+
+.evo_param_grid_alert_popup a {
+    color: white;
+}
+
+.evo_alert_message_wrapper {
+    white-space: nowrap;
+
+}
+
+.evo_param_grid_alert_scroll:hover .evo_alert_message_wrapper {
+    animation-play-state: paused !important;
+}
+
+@keyframes evo-alert-scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.evo_alert_message_wrapper > a {
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+.evo_param_grid_alert_popup.evo_alert_urgent, .evo_param_grid_alert_scroll.evo_alert_urgent {
+    background-color: rgba(191, 64, 64, 1) !important;
+}
+
+.evo_param_grid_alert_popup {
+    position: absolute;
+    height: 500px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 150px;
+    display: none;
+    z-index: 500000;
+}
+
+.evo_param_grid_alert_popup .evo_alerts_message_box_close {
+    margin-right: unset;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.evo_param_grid_alert_scroll.evo_alert_urgent {
+    padding-top: 15px;
+    height: 75px;
+    width: 100%
+}
+
+.evo_param_grid_alert_popup.evo_alert_urgent .evo_messagebox_message, .evo_param_grid_alert_scroll.evo_alert_urgent .evo_alert_message_wrapper {
+    font-size: 2em;
+    color: white;
+}
+
+.evo_param_grid_alert_popup.evo_alert_urgent .evo_alerts_message_box_close {
+    color: white !important;
+}
+
+.evo_param_grid_alert_popup .evo_messagebox_title {
+    color: white;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.evo_messagebox_popup_next_alert_wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.evo_messagebox_popup_next_alert_wrapper .evo_alerts_message_box_popup_previous {
+    padding: 10px;
+    font-size: 1.5em;
+    transform: translateY(3px);
+    display: inline-block;
+    cursor: pointer
+}
+
+.evo_messagebox_popup_next_alert_wrapper .evo_alerts_message_box_popup_next {
+    padding: 10px;
+    font-size: 1.5em;
+    transform: translateY(3px);
+    display: inline-block;
+    cursor: pointer
+}
+
+
+.evo_alert_urgent .evo_messagebox_popup_next_alert_wrapper {
+    color: white;
+    font-size: 1.25em;
+}
+
+.evo_grid_based_theme #evo_calendar_with_events_day_binder_rings {
+    left: 195px;
+    margin-top: -270px;
+}
+
+.evo_grid_based_theme #evo_calendar_with_events_day_of_week_wrapper {
+    margin-left: 4px;
+}
+
+@media (max-width: 1500px) {
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_week_and_month_wrapper {
+        width: 150px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_week_wrapper {
+        width: 150px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_week {
+        width: 125px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_month {
+        font-size: 90px;
+        width: 150px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_month_overall_wrapper {
+        width: 325px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_events_wrapper {
+        width: 375px;
+        left: 510px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_binder_rings {
+        left: 135px;
+        margin-top: -220px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_week_wrapper {
+        margin-left: 1px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .evo_grid_based_theme #evo_calendar_with_events_month_overall_wrapper {
+        width: 230px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_month {
+        font-size: 60px;
+        width: 90px;
+        margin-left: -18px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_binder_rings {
+        left: 70px;
+        margin-top: -170px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_week_and_month_wrapper {
+        width: 90px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_week_wrapper {
+        width: 90px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_week {
+        width: 83px;
+        font-size: 14px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs {
+        float: unset;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_wrapper .evo_calendar_with_events_tab {
+        display: block;
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_events_wrapper {
+        position: relative;
+        left: 0px;
+        border: 0px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs {
+        left: 0px;
+        position: relative;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_wrapper #evo_calendar_with_events_tabs .evo_calendar_with_events_tab {
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_month_overall_wrapper {
+        margin-bottom: 25px;
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_table_wrapper {
+        border-radius: 0px 0px 15px 15px
+    }
+
+    .evo_grid_based_theme #evo_calendar_with_events_day_of_week_and_month_wrapper {
+        display: none;
+    }
+
+}
+
+.news_post_columns_inner_wrapper {
+    display: grid;
+    grid-gap: 20px;
+/*	Removed by request from DC, 2020-06-04  
+	grid-template-columns: 1fr 1fr 1fr 1fr; */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news_post_column {
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.news_post_columns_inner_wrapper .news-columns-date {
+    font-style: italic;
+    color: rgba(140, 140, 140, 1.0);
+}
+
+.news_post_columns_inner_wrapper .news-headline a {
+    text-decoration: none;
+    color: rgba(20, 20, 20, 1.0);
+}
+
+
+.news_post_columns_inner_wrapper img {
+    height: 200px;
+}
+
+@media (max-width: 1200px) {
+    .news_post_columns_inner_wrapper {
+        grid-template-columns: 1fr 1fr;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .news_post_columns_inner_wrapper {
+        grid-template-columns: 1fr;
+        max-width: 200px;
+    }
+
+}
+
+
+#evo_map_homepage_wrapper .evo_cloud_widget {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+#evo_map_homepage_wrapper #evo_map {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#evo_map_homepage_wrapper #evo_map_content_area_wrapper {
+    display: none;
+}
+
+#evo_map_homepage_wrapper #evo_map_left_legend {
+    top: 0px !important;
+    left: 0px !important;
+    position: absolute !important;
+    height: calc(100% - 40px) !important;
+}
+
+#evo_map_homepage_wrapper #evo_map_image_mode_slider {
+    display: none !important;
+}
+
+#evo_map_homepage_wrapper #evo_map_popup {
+    left: unset !important;
+    top: 25px !important;
+    overflow-y: auto;
+    position: absolute;
+    width: 65%;
+    margin-left: 22.5%;
+    margin-top: 15px;
+}
+
+.news_posts_row .news_post_item img {
+    max-width: 100%;
+}
+
+.news_posts_row .news_post_item .news-summary {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.fa {
+    font-weight: 900;
+}
+
+.evo_application_slideshow_wrapper {
+    position: relative;
+}
+
+.evo_application_slideshow_wrapper .evo_slideshow_indicators {
+    list-style: none;
+}
+
+.evo_application_slideshow_wrapper img {
+    z-index: 1 !important;
+}
+
+.evo_application_slideshow_wrapper .evo_slideshow_previous {
+    background: rgb(210, 210, 210);
+    padding: 5px;
+    border-radius: 15px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.evo_application_slideshow_wrapper .evo_slideshow_previous i {
+    transform: translateX(-1px) translateY(-3px);
+}
+
+.evo_application_slideshow_wrapper_controls_hidden .evo_slideshow_next {
+    display: none !important;
+}
+
+.evo_application_slideshow_wrapper_controls_hidden .evo_slideshow_previous {
+    display: none !important;
+}
+
+.evo_application_slideshow_wrapper .evo_slideshow_next {
+    background: rgb(210, 210, 210);
+    padding: 5px;
+    border-radius: 15px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.evo_application_slideshow_wrapper > div {
+    position: relative;
+    height: 100%;
+}
+
+.evo_application_slideshow_wrapper .evo_slideshow_next i {
+    transform: translateX(-1px) translateY(-3px);
+}
+
+.evo_slideshow_controls {
+    padding: 5px;
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.8);
+    top: 40%;
+    right: 0px;
+    color: black;
+}
+
+.evo_slideshow_controls .carousel-control {
+    position: relative;
+}
+
+.evo_slideshow_controls a:focus {
+    opacity: 1;
+}
+
+.evo_slideshow_controls a {
+    display: block;
+    opacity: 0.6;
+    height: 30px;
+    cursor: pointer;
+}
+
+.evo_grid_based_theme .evo_slideshow_slide_label {
+    padding-top:15vh;
+    color:white;
+    font-family: 'Bitter', serif;
+    Font-size:3rem;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.evo_grid_based_theme .evo_slideshow_slide_content {
+    font-size:1.5rem;
+    color:white;
+    font-weight:400;
+    font-family: 'open sans', sans-serif;
+    text-shadow: 2px 2px 6px #000000;
+
+}
+
+.evo_grid_based_theme .evo_slideshow_caption_wrapper {
+    display: none;
+}
+
+.evo_grid_based_theme .evo_slideshow_slide.current_slide .evo_slideshow_caption_wrapper {
+    display: unset;
+}
+
+.evo_slideshow_controls a i {
+    color: white;
+    font-size: 20px;
+    line-height: unset;
+}
+
+.newsletter_archive_url_wrapper {
+    width: 100%;
+    position: relative;
+    height: 20px;
+}
+
+.newsletter_archive_url {
+    position: absolute;
+    right: 25px;
+}
+
+#evo_interior_application_content_wrapper form {
+    margin-left: 5%;
+    font-size: inherit;
+    display: block;
+}
+
+body #evo_overall_content_wrapper.evo_menu_mobile_visible_content_wrapper {
+    z-index: auto;
+}
+
+.news_post_paginated_item {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.news_post_paginated_item img {
+    max-width: 90%;
+}
+.news_post_paginated_title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.news_post_paginated_hr {
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    color: rgba(225, 225, 225, 1.0);
+}
+
+.news_post_paginated_button_row {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    height: 20px;
+    margin-top: 10px;
+}
+.news_post_paginated_newer_button, .blog_post_paginated_newer_button {
+    position: absolute;
+    width: 50px;
+    background-color: rgba(225, 225, 225, 1.0);
+    top: 0px;
+    left: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.news_post_paginated_older_button, .blog_post_paginated_older_button {
+    position: absolute;
+    width: 50px;
+    background-color: rgba(225, 225, 225, 1.0);
+    top: 0px;
+    right: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.evo_param_grid_alert_popup_non_grid_theme {
+    position: fixed !important;
+}
+
+.evo_news_posts_directory_view_all {
+    float: right;
+    position: relative;
+    margin-top: -10px;
+}
+
+.evo_alerts_message_box {
+    height: 100%;
+    overflow-y: auto;
+}
+
+#evo_meetings_tab_list li {
+    list-style: none;
+    display: inline-block;
+}
